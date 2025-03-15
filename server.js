@@ -4,7 +4,7 @@ const bodyParser = require('body-parser');
 const { addTask, listTasks, updateTask, removeTask, getTasks } = require('./tasks');
 
 const app = express();
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 80;
 
 // Middleware para analizar el cuerpo de las solicitudes
 app.use(bodyParser.json());
